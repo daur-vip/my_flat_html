@@ -1,0 +1,547 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  line-height: 17px;
+}
+
+.wrap {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 19px 0;
+  background-color: #222222;
+  color: white;
+}
+
+.header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.promo {
+  background-color: #f1e4e6;
+}
+
+.promo-wrap {
+  height: 765px;
+  background-image: url(../img/promo.png);
+  background-repeat: no-repeat;
+  background-position-x: -226px;
+  background-position-y: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.promo-title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 40px;
+  color: #222222;
+  border-left: 12px solid #f16d7f;
+  padding-left: 16px;
+  margin-right: 90px;
+  text-shadow: 0 4px 4px #aaa;
+}
+
+.promo-title--small {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.promo-title--pink {
+  color: #f16d7f;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-top: 65px;
+  padding-bottom: 95px;
+}
+
+.header-logo {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.header-search,
+.header-menu {
+  background-color: transparent;
+  border: none;
+}
+
+.header-profile,
+.header-cart {
+  text-decoration: none;
+  color: #fff;
+}
+
+.offers-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offers-item {
+  background-color: #c4c4c4;
+  width: 360px;
+  height: 260px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.offers-item--accessories {
+  margin-top: 30px;
+  width: 100%;
+  height: 180px;
+  background-image: url(../img/offers-accessories.jpg);
+}
+
+.offers-item--women {
+  background-image: url(../img/offers-women.jpg);
+}
+
+.offers-item--men {
+  background-image: url(../img/offers-men.jpg);
+}
+
+.offers-item--kids {
+  background-image: url(../img/offers-kids.jpg);
+}
+
+.offers-item--sale {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.offers-item--name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+
+.featured {
+  margin-top: 96px;
+}
+
+.featured-title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+}
+
+.featured-description {
+  text-align: center;
+  font-weight: 400;
+  color: #9f9f9f;
+  margin-top: 6px;
+}
+
+.featured-elements {
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.featured-item {
+  width: 360px;
+  height: 581px;
+  background-color: #f8f8f8;
+}
+
+.featured-item--image {
+  width: 360px;
+  height: 420px;
+}
+
+.featured-item--title {
+  margin: 25px 16px 0 16px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.featured-item--text {
+  margin: 13px 16px 0 16px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5d5d5d;
+}
+
+.featured-item--price {
+  margin: 18px 16px 0 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f16d7f;
+}
+
+.featured-button {
+  background-color: transparent;
+  border: 1px solid #ff6a6a;
+  margin: 49px auto 0px;
+  display: block;
+  padding: 19px 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f26376;
+}
+
+.benefits {
+  background-color: #222224;
+  padding: 103px 0;
+}
+
+.benefits-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 30px;
+}
+
+.benefits-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.benefits-item--1 {
+  background-image: url(../img/benefits-1.svg);
+}
+
+.benefits-item--2 {
+  background-image: url(../img/benefits-2.svg);
+}
+
+.benefits-item--3 {
+  background-image: url(../img/benefits-3.svg);
+}
+
+.benefits-item--title {
+  margin-top: 60px;
+  font-weight: 400;
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #fbfbfb;
+}
+
+.benefits-item--text {
+  margin-top: 16px;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+.subscribe {
+  height: 448px;
+  background-image: url(../img/subscribe-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscribe-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.subsrcibe-review {
+  width: 360px;
+  background-image: url(../img/review.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.subscribe-review--text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+  padding-top: 126px;
+}
+
+.subscribe-section {
+  width: 558px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe-section--row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 33px;
+}
+
+.subscribe-section--title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 167.2%;
+  text-align: center;
+  color: #222224;
+}
+
+.subscribe-section--text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167.2%;
+  text-align: center;
+  color: #222224;
+}
+
+.subscribe-section--input {
+  background: #e1e1e1;
+  outline: none;
+  border: none;
+  width: 256px;
+  height: 49px;
+  border-radius: 24px 0 0 24px;
+}
+
+.subscribe-section--input::-webkit-input-placeholder {
+  padding-left: 23px;
+}
+
+.subscribe-section--input:-ms-input-placeholder {
+  padding-left: 23px;
+}
+
+.subscribe-section--input::-ms-input-placeholder {
+  padding-left: 23px;
+}
+
+.subscribe-section--input::placeholder {
+  padding-left: 23px;
+}
+
+.subscribe-section--link {
+  text-decoration: none;
+}
+
+.subscribe-section--button {
+  width: 100px;
+  height: 49px;
+  background: #f16d7f;
+  border-radius: 0 24px 24px 0;
+  text-align: center;
+  line-height: 49px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.bottom {
+  background-color: #222224;
+  padding: 24px 0;
+}
+
+.bottom-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom-rights {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fbfbfb;
+}
+
+.bottom-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
+}
