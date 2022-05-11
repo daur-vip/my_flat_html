@@ -100,7 +100,7 @@
          </h2>
       </div>
       <div class="services-content">
-         <div class="wrap services-wrap">
+         <div class="max-wrap services-wrap">
             <div class="services-item services-item--1">
                <h3 class="services-item-title">
                   Онлайн покупка недвижимости
@@ -121,7 +121,7 @@
             <div class="services-item services-item--4">
                <h3 class="services-item-title">
                   Безопасный перевод
-                  денежных средств
+                  денег
                </h3>
             </div>
          </div>
@@ -161,7 +161,7 @@
       </form>
 
       <div class="results">
-         <div class="wrap">
+         <div class="max-wrap">
             <div class="result-items">
                <div class="result-item">
                   <img src="img/result1.jpg" alt="Result 1">
@@ -396,7 +396,7 @@
 
 
    <section class="post-services">
-      <div class="wrap">
+      <div class="max-wrap">
          <h2 class="post-services-title">
             Постпродажный сервис
          </h2>
@@ -416,7 +416,7 @@
             </div>
             <div class="post-services-item">
                <fieldset class="post-services-item__fieldset">
-                  <legend class="post-services-item__legend"><img src="img/postservices-1.svg" alt=""></legend>
+                  <legend class="post-services-item__legend"><img src="img/postservices-2.svg" alt=""></legend>
                   <h4 class="post-services-item__title">
                      Услуги дизайнера
                   </h4>
@@ -429,7 +429,7 @@
             </div>
             <div class="post-services-item">
                <fieldset class="post-services-item__fieldset">
-                  <legend class="post-services-item__legend"><img src="img/postservices-1.svg" alt=""></legend>
+                  <legend class="post-services-item__legend"><img src="img/postservices-3.svg" alt=""></legend>
                   <h4 class="post-services-item__title">
                      Клининг
                   </h4>
@@ -444,7 +444,7 @@
             </div>
             <div class="post-services-item">
                <fieldset class="post-services-item__fieldset">
-                  <legend class="post-services-item__legend"><img src="img/postservices-1.svg" alt=""></legend>
+                  <legend class="post-services-item__legend"><img src="img/postservices-4.svg" alt=""></legend>
                   <h4 class="post-services-item__title">
                      Оборудование бытовой техникой, закуп мебели и текстиля
                   </h4>
@@ -464,7 +464,7 @@
    </section>
 
    <section class="media">
-      <div class="wrap">
+      <div class="max-wrap">
          <div class="media-wrap">
             <h2 class="media-title">
                СМИ о нас
@@ -475,34 +475,38 @@
                предварительного просмотра макета и визуальных макетах
             </p>
             <div class="media-items">
-               <div class="media-item">
-                  <img src="img/media-quote.png" alt="quote" class="media-quote">
-                  <div class="media-content">
-                     <p class="media-text">
-                        Lorem Ipsum является текст-заполнитель обычно используется в графических, печать</p>
-                     <p class="media-unit">
-                        - Портал "ИМЯ"
-                     </p>
-                     <a href="#" class="media-link">Перейти</a>
-                  </div>
+               <div class="media-item-container">
+                  <div class="media-item">
+                     <img src="img/media-quote.png" alt="quote" class="media-quote">
+                     <div class="media-content">
+                        <p class="media-text">
+                           Lorem Ipsum является текст-заполнитель обычно используется в графических, печать</p>
+                        <p class="media-unit">
+                           - Портал "ИМЯ"
+                        </p>
+                        <a href="#" class="media-link">Перейти</a>
+                     </div>
 
-                  <div class="media-image">
-                     <img src="img/media-1.jpg" alt="Media 1">
+                     <div class="media-image">
+                        <img src="img/media-1.jpg" alt="Media 1">
+                     </div>
                   </div>
                </div>
-               <div class="media-item">
-                  <img src="img/media-quote.png" alt="quote" class="media-quote">
-                  <div class="media-content">
-                     <p class="media-text">
-                        Lorem Ipsum является текст-заполнитель обычно используется в графических, печать</p>
-                     <p class="media-unit">
-                        - Портал "ИМЯ"
-                     </p>
-                     <a href="#" class="media-link">Перейти</a>
-                  </div>
+               <div class="media-item-container">
+                  <div class="media-item">
+                     <img src="img/media-quote.png" alt="quote" class="media-quote">
+                     <div class="media-content">
+                        <p class="media-text">
+                           Lorem Ipsum является текст-заполнитель обычно используется в графических, печать</p>
+                        <p class="media-unit">
+                           - Портал "ИМЯ"
+                        </p>
+                        <a href="#" class="media-link">Перейти</a>
+                     </div>
 
-                  <div class="media-image">
-                     <img src="img/media-2.jpg" alt="Media 2">
+                     <div class="media-image">
+                        <img src="img/media-2.jpg" alt="Media 2">
+                     </div>
                   </div>
                </div>
             </div>
@@ -515,92 +519,101 @@
          Вопрос - ответ
       </h2>
 
-      <div class="questions-items">
-         <div class="wrap">
+      <div class="max-wrap">
+         <div class="questions-items">
             <div class="questions-item">
+
                <input class="questions-checkbox" type="checkbox" id="title1" />
-               <label class="questions-label" for="title1">Accordion One</label>
+               <label class="questions-label" for="title1">Accordion One<div class="questions-plus">+</div>
+
+               </label>
+               <div class="questions-content">
+                  <p> Your content goes here inside this division with the class "content".Your content goes here inside
+                     this division with the class "content".Your content goes here inside this division with the class
+                     "content".Your content goes here inside this division with the class "content".</p>
+               </div>
+            </div>
+            <div class="questions-item">
+               <input class="questions-checkbox" type="checkbox" id="title2" />
+               <label class="questions-label" for="title2">Accordion One<div class="questions-plus">+</div></label>
 
                <div class="questions-content">
                   <p>Your content goes here inside this division with the class "content".</p>
                </div>
             </div>
-            <input class="questions-checkbox" type="checkbox" id="title2" />
-            <label class="questions-label" for="title2">Accordion Two</label>
 
-            <div class="questions-content">
-               <p>Your content goes here inside this division with the class "content".</p>
-            </div>
+            <div class="questions-item">
+               <input class="questions-checkbox" type="checkbox" id="title3" />
+               <label class="questions-label" for="title3">Accordion One<div class="questions-plus">+</div></label>
 
-            <input class="questions-checkbox" type="checkbox" id="title3" />
-            <label class="questions-label" for="title3">Accordion Three</label>
-
-            <div class="questions-content">
-               <p>Your content goes here inside this division with the class "content".</p>
+               <div class="questions-content">
+                  <p>Your content goes here inside this division with the class "content".</p>
+               </div>
             </div>
          </div>
+
       </div>
    </section>
 
    <footer class="footer">
-      <div class="benefits">
-         <div class="wrap benefits-wrap">
-            <div class="benefits-item benefits-item--1">
-               <h3 class="benefits-item--title">Free delivery</h3>
-
-               <p class="benefits-item--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, est aperiam
-                  quam
-                  nisi nesciunt sapiente.</p>
-            </div>
-            <div class="benefits-item benefits-item--2">
-               <h3 class="benefits-item--title">Free delivery</h3>
-               <p class="benefits-item--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, est aperiam
-                  quam
-                  nisi nesciunt sapiente.</p>
-            </div>
-            <div class="benefits-item benefits-item--3">
-               <h3 class="benefits-item--title">Free delivery</h3>
-               <p class="benefits-item--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, est aperiam
-                  quam
-                  nisi nesciunt sapiente.</p>
-            </div>
-
-         </div>
+      <div class="footer-waves">
       </div>
-      <div class="subscribe">
-         <div class="wrap subscribe-wrap">
-            <div class="subsrcibe-review">
-               <p class="subscribe-review--text">
-                  “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
-               </p>
+      <div class="max-wrap">
+         <div class="footer-content">
+            <div class="footer-contact">
+               <h3 class="footer-title">Связаться с нами</h3>
+               <div class="footer-contact-items">
+                  <div class="footer-contact-item">
+                     <img class="footer-contact-item__image" src="img/flag-kz.svg" alt="KZ">Казахстан
+                  </div>
+                  <div class="footer-contact-item"><img class="footer-contact-item__image" src="img/flag-turkey.svg"
+                        alt="Turkey">Турция
+                  </div>
+                  <div class="footer-contact-item"><img class="footer-contact-item__image" src="img/contacts-house.svg"
+                        alt="KZ">Borgo Penelope 1 Appartamento 84</div>
+                  <div class="footer-contact-item"><img class="footer-contact-item__image" src="img/contacts-house.svg"
+                        alt="KZ">Borgo Penelope 1 Appartamento 84</div>
+                  <div class="footer-contact-item"><img class="footer-contact-item__image" src="img/contacts-phone.svg"
+                        alt="KZ">+7 777 777 77 77</div>
+                  <div class="footer-contact-item"><img class="footer-contact-item__image" src="img/contacts-phone.svg"
+                        alt="KZ">+7 777 777 77 77</div>
+                  <div class="footer-contact-item"><img class="footer-contact-item__image" src="img/contacts-mail.svg"
+                        alt="KZ">inbox@gmail.com</div>
+                  <div class="footer-contact-item"><img class="footer-contact-item__image" src="img/contacts-mail.svg"
+                        alt="KZ">inbox@gmail.com</div>
+               </div>
 
             </div>
-            <div class="subscribe-section">
-               <h3 class="subscribe-section--title">SUBSCRIBE</h3>
-               <p class="subscribe-section--text">
-                  FOR OUR NEWLETTER AND PROMOTION
-               </p>
-               <div class="subscribe-section--row">
-                  <input type="text" placeholder="Enter Your Email" class="subscribe-section--input">
-                  <a href="#" class="subscribe-section--link">
-                     <div class="subscribe-section--button">Subscribe</div>
-                  </a>
+            <div class="footer-nav">
+               <h3 class="footer-title">Навигация</h3>
+               <div class="footer-nav-items">
+                  <div class="footer-nav-item">
+                     О нас
+                  </div>
+                  <div class="footer-nav-item">
+                     Каталог
+                  </div>
+                  <div class="footer-nav-item">
+                     Услуги
+                  </div>
+                  <div class="footer-nav-item">
+                     СМИ
+                  </div>
                </div>
             </div>
-         </div>
-      </div>
-      <div class="bottom">
-         <div class="wrap bottom-wrap">
-            <div class="bottom-rights">© 2021 Brand All Rights Reserved.</div>
-            <div class="bottom-socials">
-               <a href="#" class="bottom-socials--link"><img src="img/social-1.png" alt=""
-                     class="bottom-socials--image"></a>
-               <a href="#" class="bottom-socials--link"><img src="img/social-2.png" alt=""
-                     class="bottom-socials--image"></a>
-               <a href="#" class="bottom-socials--link"><img src="img/social-3.png" alt=""
-                     class="bottom-socials--image"></a>
-               <a href="#" class="bottom-socials--link"><img src="img/social-4.png" alt=""
-                     class="bottom-socials--image"></a>
+            <div class="footer-socials">
+               <h3 class="footer-title">Мы в соц. сетях</h3>
+               <div class="footer-socials-icons">
+                  <div class="footer-socials-icon">
+                     <img src="img/footer-socials-1.svg" alt="Whatsapp">
+                  </div>
+                  <div class="footer-socials-icon">
+                     <img src="img/footer-socials-2.svg" alt="TikTok">
+                  </div>
+                  <div class="footer-socials-icon">
+                     <img src="img/footer-socials-3.svg" alt="Instagram">
+                  </div>
+               </div>
             </div>
          </div>
       </div>
