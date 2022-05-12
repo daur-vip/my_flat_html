@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
    <meta charset="UTF-8">
@@ -13,6 +13,37 @@
 </head>
 
 <body>
+   <div class="mobile-menu">
+      <div class="container">
+         <div class="header__body">
+            <a href="#" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
+            <div class="mobile-socials">
+               <a href="#"><img src="img/footer-socials-1.svg" alt="Whatsapp"></a>
+            </div>
+            <div class="mobile-socials">
+               <a href="#"><img src="img/footer-socials-2.svg" alt="Whatsapp"></a>
+            </div>
+            <div class="mobile-socials">
+               <a href="#"><img src="img/footer-socials-3.svg" alt="Whatsapp"></a>
+            </div>
+            <div class="header__burger">
+               <span></span>
+            </div>
+
+            <nav class="header__menu">
+               <ul class="header__list">
+                  <li><a href="" class="header__link">О нас</a></li>
+                  <li><a href="" class="header__link">Комплексы</a></li>
+                  <li><a href="" class="header__link">Каталог</a></li>
+                  <li><a href="" class="header__link">Услуги</a></li>
+                  <li><a href="" class="header__link">СМИ о нас</a></li>
+                  <li><a href="" class="header__link">Контакты</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
+   </div>
+
    <header class="header">
       <div class="wrap header-wrap">
          <div class="header-left">
@@ -87,7 +118,7 @@
             недвижимость в Турции
          </h1>
          <hr class="slider-hr">
-         <p class="slider-text">Отличное решение для комфортной жизни и <br> выгодного инвестирования!</p>
+         <p class="slider-text">Отличное решение для комфортной жизни и выгодного инвестирования!</p>
          <img src="img/slider-button.png" alt="Оставить заявку">
       </div>
    </section>
@@ -101,29 +132,38 @@
       </div>
       <div class="services-content">
          <div class="max-wrap services-wrap">
-            <div class="services-item services-item--1">
+            <div class="services-item-wrap">
                <h3 class="services-item-title">
                   Онлайн покупка недвижимости
                </h3>
+               <div class="services-item services-item--1">
+               </div>
             </div>
-            <div class="services-item services-item--2">
+            <div class="services-item-wrap">
                <h3 class="services-item-title">
                   Консультация и подбор
                   недвижимости
                </h3>
+               <div class="services-item services-item--2">
+               </div>
             </div>
-            <div class="services-item services-item--3">
+            <div class="services-item-wrap">
                <h3 class="services-item-title">
                   Организация тура
                   для клиентов
                </h3>
+               <div class="services-item services-item--3">
+               </div>
             </div>
-            <div class="services-item services-item--4">
+            <div class="services-item-wrap">
                <h3 class="services-item-title">
                   Безопасный перевод
                   денег
                </h3>
+               <div class="services-item services-item--4">
+               </div>
             </div>
+
          </div>
       </div>
       <div class="services-triangles">
@@ -131,6 +171,7 @@
          <div class="services-triangles-right"></div>
       </div>
    </section>
+
 
    <main class="main">
       <form action="#">
@@ -172,8 +213,8 @@
                   <p class="result-item__price">380 000 €</p>
 
                   <p class="result-item__desc">
-                     <svg class="result-item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt result-item__icon" viewBox="0 0 16 16">
                         <path
                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z">
                         </path>
@@ -181,8 +222,8 @@
                      </svg>Махмутлар
                   </p>
                   <p class="result-item__desc">
-                     <svg class="result-item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house result-item__icon" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                            d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z">
                         </path>
@@ -192,8 +233,8 @@
                      </svg>Квартира (1+1)
                   </p>
                   <p class="result-item__desc">
-                     <svg class="result-item__icon result-item__icon--square" xmlns="http://www.w3.org/2000/svg"
-                        width="13" height="13" fill="currentColor" class="bi bi-arrows-fullscreen" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                        class="bi bi-arrows-fullscreen result-item__icon result-item__icon--square" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                            d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z">
                         </path>
@@ -209,8 +250,8 @@
                   <p class="result-item__price">380 000 €</p>
 
                   <p class="result-item__desc">
-                     <svg class="result-item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt result-item__icon" viewBox="0 0 16 16">
                         <path
                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z">
                         </path>
@@ -218,8 +259,8 @@
                      </svg>Махмутлар
                   </p>
                   <p class="result-item__desc">
-                     <svg class="result-item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house result-item__icon" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                            d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z">
                         </path>
@@ -229,8 +270,8 @@
                      </svg>Квартира (1+1)
                   </p>
                   <p class="result-item__desc">
-                     <svg class="result-item__icon result-item__icon--square" xmlns="http://www.w3.org/2000/svg"
-                        width="13" height="13" fill="currentColor" class="bi bi-arrows-fullscreen" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                        class="bi bi-arrows-fullscreen result-item__icon result-item__icon--square" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                            d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z">
                         </path>
@@ -246,8 +287,8 @@
                   <p class="result-item__price">380 000 €</p>
 
                   <p class="result-item__desc">
-                     <svg class="result-item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt result-item__icon" viewBox="0 0 16 16">
                         <path
                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z">
                         </path>
@@ -255,8 +296,8 @@
                      </svg>Махмутлар
                   </p>
                   <p class="result-item__desc">
-                     <svg class="result-item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house result-item__icon" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                            d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z">
                         </path>
@@ -266,8 +307,8 @@
                      </svg>Квартира (1+1)
                   </p>
                   <p class="result-item__desc">
-                     <svg class="result-item__icon result-item__icon--square" xmlns="http://www.w3.org/2000/svg"
-                        width="13" height="13" fill="currentColor" class="bi bi-arrows-fullscreen" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                        class="bi bi-arrows-fullscreen result-item__icon result-item__icon--square" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                            d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z">
                         </path>
@@ -283,8 +324,8 @@
                   <p class="result-item__price">380 000 €</p>
 
                   <p class="result-item__desc">
-                     <svg class="result-item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt result-item__icon" viewBox="0 0 16 16">
                         <path
                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z">
                         </path>
@@ -292,8 +333,8 @@
                      </svg>Махмутлар
                   </p>
                   <p class="result-item__desc">
-                     <svg class="result-item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house result-item__icon" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                            d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z">
                         </path>
@@ -303,8 +344,8 @@
                      </svg>Квартира (1+1)
                   </p>
                   <p class="result-item__desc">
-                     <svg class="result-item__icon result-item__icon--square" xmlns="http://www.w3.org/2000/svg"
-                        width="13" height="13" fill="currentColor" class="bi bi-arrows-fullscreen" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                        class="bi bi-arrows-fullscreen result-item__icon result-item__icon--square" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                            d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z">
                         </path>
@@ -320,8 +361,8 @@
                   <p class="result-item__price">380 000 €</p>
 
                   <p class="result-item__desc">
-                     <svg class="result-item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt result-item__icon" viewBox="0 0 16 16">
                         <path
                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z">
                         </path>
@@ -329,8 +370,8 @@
                      </svg>Махмутлар
                   </p>
                   <p class="result-item__desc">
-                     <svg class="result-item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house result-item__icon" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                            d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z">
                         </path>
@@ -340,8 +381,8 @@
                      </svg>Квартира (1+1)
                   </p>
                   <p class="result-item__desc">
-                     <svg class="result-item__icon result-item__icon--square" xmlns="http://www.w3.org/2000/svg"
-                        width="13" height="13" fill="currentColor" class="bi bi-arrows-fullscreen" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                        class="bi bi-arrows-fullscreen result-item__icon result-item__icon--square" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                            d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z">
                         </path>
@@ -357,8 +398,8 @@
                   <p class="result-item__price">380 000 €</p>
 
                   <p class="result-item__desc">
-                     <svg class="result-item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt result-item__icon" viewBox="0 0 16 16">
                         <path
                            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z">
                         </path>
@@ -366,8 +407,8 @@
                      </svg>Махмутлар
                   </p>
                   <p class="result-item__desc">
-                     <svg class="result-item__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                        fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-house result-item__icon" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                            d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z">
                         </path>
@@ -377,15 +418,14 @@
                      </svg>Квартира (1+1)
                   </p>
                   <p class="result-item__desc">
-                     <svg class="result-item__icon result-item__icon--square" xmlns="http://www.w3.org/2000/svg"
-                        width="13" height="13" fill="currentColor" class="bi bi-arrows-fullscreen" viewBox="0 0 16 16">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                        class="bi bi-arrows-fullscreen result-item__icon result-item__icon--square" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                            d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707zm4.344 0a.5.5 0 0 1 .707 0l4.096 4.096V11.5a.5.5 0 1 1 1 0v3.975a.5.5 0 0 1-.5.5H11.5a.5.5 0 0 1 0-1h2.768l-4.096-4.096a.5.5 0 0 1 0-.707zm0-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707zm-4.344 0a.5.5 0 0 1-.707 0L1.025 1.732V4.5a.5.5 0 0 1-1 0V.525a.5.5 0 0 1 .5-.5H4.5a.5.5 0 0 1 0 1H1.732l4.096 4.096a.5.5 0 0 1 0 .707z">
                         </path>
                      </svg>Площадь: 53 кв.м.
                   </p>
                </div>
-
 
             </div>
             <a class="results-more" href="#">Показать еще...</a>
@@ -618,6 +658,8 @@
          </div>
       </div>
    </footer>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+   <script src="js/script.js"></script>
 </body>
 
 </html>
